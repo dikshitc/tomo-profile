@@ -1,0 +1,63 @@
+/* About Section Container */
+.about-container {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    background: #a3c3e3; /* Light gradient */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* About Content */
+.about-content {
+    text-align: justify; /* Ensures full justify alignment */
+}
+
+/* Heading Style */
+.about-container h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e3a8a; /* Deep blue */
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Paragraph Style */
+.about-container p {
+    font-size: 1.2rem;
+    color: #333; /* Dark gray */
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    text-align: justify; /* ✅ Ensures full justify alignment */
+}
+
+/* Highlight important text */
+.about-container strong {
+    color: #d97706; /* Golden highlight */
+    font-weight: 600;
+}
+
+/* Hover effect */
+.about-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 1.5rem;
+        margin: 1.5rem;
+    }
+
+    .about-container h1 {
+        font-size: 2rem;
+    }
+
+    .about-container p {
+        font-size: 1rem;
+        text-align: justify; /* ✅ Ensures justified text on mobile */
+    }
+}

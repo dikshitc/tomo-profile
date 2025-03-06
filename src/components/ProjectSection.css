@@ -1,0 +1,105 @@
+/* General container styling */
+.projects-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+    background: #a3c3e3;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title Styling */
+.projects-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+/* Timeline Layout */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 4px solid #007bff;
+    margin: 0 auto;
+}
+
+/* Timeline Item */
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+/* Timeline Dot */
+.timeline-dot {
+    width: 14px;
+    height: 14px;
+    background-color: #007bff;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 10px;
+}
+
+/* Project Card */
+.project-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: left;
+    width: 100%;
+}
+
+/* Hover Effect */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Title */
+.project-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 5px;
+}
+
+/* Project Date */
+.project-date {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+/* Project Description */
+.project-description {
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-container {
+        padding: 1.5rem;
+    }
+
+    .timeline {
+        padding-left: 10px;
+        border-left: 3px solid #007bff;
+    }
+
+    .timeline-dot {
+        width: 10px;
+        height: 10px;
+        left: -6px;
+    }
+
+    .project-card {
+        padding: 1rem;
+    }
+}

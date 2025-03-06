@@ -1,0 +1,108 @@
+/* Publications Section */
+.publications-container {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading */
+.publications-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Publications List */
+.publications-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+/* Single-Line Publication Item */
+.publication-item {
+    font-size: 1rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Last Item Without Border */
+.publication-item:last-child {
+    border-bottom: none;
+}
+
+/* Title */
+.publication-title {
+    font-weight: bold;
+    color: #34495e;
+}
+
+/* Authors */
+.publication-authors {
+    color: #555;
+    margin-left: 5px;
+    
+}
+
+/* Details */
+.publication-details {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-left: 5px;
+}
+
+/* "More..." Text */
+.more-text {
+    display: block;
+    text-align: left;
+    color: #007bff;
+    font-size: 1rem;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.more-text:hover {
+    text-decoration: underline;
+}
+
+/* "Show Less" Text */
+.less-text {
+    display: block;
+    text-align: left;
+    color: #007bff;
+    font-size: 1rem;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.less-text:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .publications-container {
+        padding: 1.5rem;
+        margin: 1.5rem;
+    }
+
+    .publications-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .publication-item {
+        font-size: 0.95rem;
+        padding: 8px 0;
+    }
+
+    .more-text,
+    .less-text {
+        font-size: 0.9rem;
+    }
+}

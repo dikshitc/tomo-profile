@@ -1,0 +1,94 @@
+/* Background Effect */
+#tsparticles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Sends background behind content */
+}
+
+/* Wrapper to handle background */
+.intro-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Intro Section */
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 80px 20px;
+    min-height: 80vh;
+    background: none; /* Remove static background */
+}
+
+/* Left: Profile Image */
+.intro-image img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.intro-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Right: Name & Description */
+.intro-text {
+    max-width: 600px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-name {
+    font-size: 2.8rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #033255;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* ✅ Justify-aligned text */
+.intro-description {
+    font-size: 1.2rem;
+    color: #0a0707e9;
+    line-height: 1.8;
+    font-weight: 500;
+    text-align: justify; /* Ensures text is justified */
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .intro-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-image img {
+        width: 220px;
+        height: 220px;
+        margin-bottom: 20px;
+    }
+
+    .intro-text {
+        text-align: justify; /* Keeps justification on mobile screens */
+    }
+
+    .intro-name {
+        font-size: 2.2rem;
+    }
+
+    .intro-description {
+        font-size: 1rem;
+        text-align: justify; /* Justify text on small screens too */
+    }
+}
